@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learn DSA concepts with me - ANSHUL-KOTWAL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1,
+      h2 {
+        background: linear-gradient(
+          30deg,
+          rgb(215, 196, 215),
+          rgb(151, 151, 208)
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 3vw;
+        text-shadow: 4px 4px 4px rgb(13, 13, 214);
+      }
+
+      button {
+        outline: 2px solid rgb(240, 135, 105);
+      }
+      * {
+        font-family: "mclaren";
+      }
+
+      body {
+        background: url("https://miro.medium.com/v2/resize:fit:1200/1*yIs6PUM0dSFWPikThl-Wvg.jpeg");
+        background-repeat: repeat-y;
+        background-size: cover;
+        background-position: center, center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      footer {
+        color: rgb(213, 226, 238);
+      }
+      button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 30px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin: 10px;
+        filter: drop-shadow(10px 10px 5px rgb(139, 79, 175));
+        display: flex;
+        font-size: 35px;
+      }
+
+      button:hover {
+        background-color: #6b9158;
+        font-size: 3rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="h1">Learn DSA concepts with Anshul Kotwal</h1>
+    <h2>Sorting Algorithms visualizer</h2>
+    <button id="bbs">BubbleSort</button>
+    <button id="ss">SelectionSort</button>
+    <button id="ms">MergeSort</button>
+    <button id="rs">RadixSort</button>
+    <button id="cs">CountSort</button>
+    <button id="is">InsertionSort</button>
+  </body>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    const btn = document.querySelector("#bbs");
+    btn.addEventListener("click", () => {
+      window.location.href = "bubblesort.html";
+    });
+    const btn2 = document.querySelector("#ss");
+    btn2.addEventListener("click", () => {
+      window.location.href = "selectionsort.html";
+    });
+    const btn3 = document.querySelector("#ms");
+    btn3.addEventListener("click", () => {
+      window.location.href = "mergesort.html";
+    });
+  
+    const btn5 = document.querySelector("#rs");
+    btn5.addEventListener("click", () => {
+      window.location.href = "radixsort.html";
+    });
+    const btn6 = document.querySelector("#cs");
+    btn6.addEventListener("click", () => {
+      window.location.href = "countsort.html";
+    });
+    const btn4 = document.querySelector("#is");
+    btn4.addEventListener("click", () => {
+      window.location.href = "insertion.html";
+    });
+    
+    var typed = new Typed(".h1", {
+      strings: ["Learn DSA concepts with Anshul Kotwal"],
+      typeSpeed: 80,
+      backSpeed: 60,
+      backDelay: 20,
+      loop: true,
+    });
+  </script>
+  <footer>
+    <p>&copy; 2023 Anshulkotwal</p>
+    <p>This is a sorting visualizer project.</p>
+  </footer>
+</html>

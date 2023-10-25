@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BubbleSort Algorithm</title>
+    <style>
+      .h1 {
+        display: flex;
+        justify-content: center;
+      }
+      .pdiv {
+        display: flex;
+        align-items: flex-end;
+        flex-wrap: nowrap;
+        background-color: rgb(218, 204, 204);
+        border: 10px double rgb(109, 109, 213);
+        justify-content: center;
+        height: 50vh;
+        filter: drop-shadow(10px 10px 5px grey);
+      }
+      .startbutton {
+        border: 2px solid;
+        background-color: aquamarine;
+        filter: drop-shadow(10px 10px 5px grey);
+        margin: 15px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 50px;
+        color: aliceblue;
+        cursor: pointer;
+      }
+      .main {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      input {
+        cursor: pointer;
+        filter: drop-shadow(10px 10px 5px grey);
+        border-radius: 20px;
+        padding: 20px;
+        width: 40%;
+        margin: auto;
+        font-size: 2rem;
+      }
+      .bar {
+        margin: 20px;
+        width: 80px;
+        background-color: red;
+        font-size: 1.5vw;
+      }
+      .bar h3 {
+        position: relative;
+        top: 20px;
+      }
+      .control-button {
+        border: 2px solid;
+        background-color: aquamarine;
+        filter: drop-shadow(10px 10px 5px rgb(171, 169, 169));
+        font-size: 50px;
+        color: aliceblue;
+        cursor: pointer;
+      }
+
+      .control-button:first-child {
+        margin-right: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="h1"><h1>Bubble Sort Algorithm visualizer</h1></div>
+    <div class="pdiv" id="pdiv"></div>
+    <div>
+      <button class="startbutton">Start</button>
+      <button class="control-button" id="pauseButton">Pause</button>
+      <button class="control-button" id="stopButton">Stop</button>
+    </div>
+    <!-- <button class="startbutton">Start</button>
+    <button class="control-button" id="pauseButton">Pause</button>
+    <button class="control-button" id="stopButton">Stop</button> -->
+    <div class="main">
+      <input type="text" , placeholder="ex.12,34,39,46 Note: Max element 50" />
+    </div>
+
+    <script src="bubble.js"></script>
+  </body>
+</html>

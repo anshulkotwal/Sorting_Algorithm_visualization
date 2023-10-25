@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selection Sorting</title>
+    <style>
+        .h1{
+            display: flex;
+            justify-content: center;
+        }
+        .pdiv {
+            display: flex;
+            align-items: flex-end;
+            flex-wrap: nowrap;
+            background-color: rgb(229, 215, 215);
+            border: 10px double rgb(123, 123, 226);
+            justify-content: center;
+            height: 50vh;
+        }
+        .startbutton {
+            border: 2px solid;
+            background-color: aquamarine;
+            filter: drop-shadow(10px 10px 5px grey);
+            margin: 15px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            color: aliceblue;
+            cursor: pointer;
+        }
+        .pauseButton {
+            border: 2px solid;
+            background-color: aquamarine;
+            filter: drop-shadow(10px 10px 5px grey);
+            font-size: 50px;
+            color: aliceblue;
+            cursor: pointer;
+            position: absolute;
+            left: 40%;
+            transform: translateX(120%);
+        }
+        .stopButton {
+            border: 2px solid;
+            background-color: aquamarine;
+            filter: drop-shadow(10px 10px 5px grey);
+            font-size: 50px;
+            color: aliceblue;
+            cursor: pointer;
+            position: absolute;
+            right: 40%;
+            transform: translateY(90%);
+            transform: translateX(-120%); 
+        }
+        .main {
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input {
+            cursor: pointer;
+            filter: drop-shadow(10px 10px 5px grey);
+            border-radius: 20px;
+            padding: 20px;
+            width: 40%;
+            margin: auto;
+            font-size: 2rem;
+        }
+        .bar {
+            margin: 20px;
+            width: 80px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="h1"><h1>Selection Sort Algorithm visualizer</h1></div>
+    <div class="pdiv" id="pdiv"></div>
+    <button class="startbutton" id="startButton">Start</button>
+    <button class="pauseButton" id="pauseButton">Pause</button>
+    <button class="stopButton" id="stopButton">Stop</button>
+    <div class="main">
+        <input type="text" id="inputList" placeholder="ex. 12,34,56,66 Note: Max element 50">
+    </div>
+    <script src="selectionsort.js"></script>
+    <script>
+        const startButton = document.querySelector("#startButton");
+        const inputList = document.querySelector("#inputList");
+
+        startButton.addEventListener("click", () => {
+            const values = inputList.value.split(",").map(Number);
+            selectionSort(values);
+        });
+    </script>
+</body>
+</html>
